@@ -1,0 +1,95 @@
+/* -- This work is licensed under the Creative Commons Attribution 4.0 International License. 
+	  To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.
+	  
+	  Created by Christopher Peach (chrispeach.web@gmail.com) -- */
+
+@charset "utf-8";
+
+*,
+*:before,
+*:after {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+html,
+body {
+	font-size:100%;
+	height:100%;
+	line-height:1.6rem;
+}
+
+a:hover {cursor:pointer;}
+
+.clearfix:before,
+.clearfix:after {
+  	content:" ";
+  	display:table; 
+} .clearfix:after {clear:both;}
+
+.grid {
+	display:inline-block;
+	padding-left:1%;
+	padding-right:1%;
+	margin-right:-4px;
+	vertical-align:top;
+	position:relative;
+}
+
+.grid > .grid {
+	height:inherit;
+}
+
+.hide {display:none;}
+
+.grid > img {
+	max-width:100%;
+	height:auto;
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.grid-container {
+	margin:0 auto;
+	width:1220px;
+	position:relative;
+	
+	/* -- Width can either be set as responsive below, or you can keep it fixed as shown above -- */
+	
+	/* --
+	
+	min-width:480px;
+	max-width:1920px;
+	
+	-- */
+}	
+
+.grid-05  {width:5%;}
+.grid-10  {width:10%;}
+.grid-15  {width:15%;}
+.grid-20  {width:20%;}
+.grid-25  {width:25%;}
+.grid-30  {width:30%;}
+.grid-33  {width:33.3333333%;} /* -- Grids work in increments of five percent from 05 - 100, this allows for   -- */
+.grid-35  {width:35%;}         /*  -- incredibly accurate whole number rounding based grid apart from the 33%. -- */
+.grid-40  {width:40%;}
+.grid-45  {width:45%;}
+.grid-50  {width:50%;}
+.grid-55  {width:55%;}
+.grid-60  {width:60%;}
+.grid-65  {width:65%;}
+.grid-70  {width:70%;}
+.grid-75  {width:75%;}
+.grid-80  {width:80%;}
+.grid-85  {width:85%;}
+.grid-90  {width:90%;}
+.grid-95  {width:95%;}
+.grid-100 {width:100%;}
+
+.push-right {float:right !important;} /* -- Floats grids either left or right. -- */
+.push-left  {float:left !important;}
+
+/* -- Inclusion of normalize.css | Comment it out to remove its effects or just delete it. -- */
+
+/* -- ! normalize.css v3.0.1 | MIT License | git.io/normalize -- */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
